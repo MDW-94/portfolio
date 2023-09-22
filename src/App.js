@@ -1,10 +1,17 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import NavBar from './Components/NavBar';
+import PortfolioContainer from './Container/PortfolioContainer'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Site under construction...</h1>
-    </div>
+    <Router>
+      <NavBar/>
+      <PortfolioContainer/>
+    </Router>
   );
 }
 
