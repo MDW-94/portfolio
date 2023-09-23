@@ -5,7 +5,7 @@ import styled from "styled-components";
 import logo4 from "../logo4.png"
 
 const NavContainer = styled.div`
-background-color: rgba(255, 255, 255, 0.1);
+background: rgba(245, 245, 245, 0.5); 
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -41,7 +41,9 @@ align-items: center;
 `
 
 const StyledLink = styled(Link)`
-color: black;
+color: white;
+font-weight: 900;
+font-size: larger;
 text-decoration: none;
 `
 
@@ -83,6 +85,11 @@ const NavBar = () => {
 }
  
 export default NavBar;
+
+// THINGS STILL NEEDED TO BE DONE:
+// - Collapsable 'Show More' menu beside About, Project, Contact 
+// - Render the NavBar over the background of each page, so it appears to be floating
+// - Creating animation of line that grows through About, Project and Contact
 
 
 // <MainHeading>Matthew Wasylko</MainHeading>
