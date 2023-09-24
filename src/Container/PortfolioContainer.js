@@ -5,18 +5,20 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import About from "../Components/About";
 import ProjectsList from "../Components/ProjectsList";
 import Contact from "../Components/Contact";
+import HyperLinks from "../Components/HyperLinks";
 
 import styled from "styled-components";
 
 const MainBackgroundStyle = styled.div`
-/* background: lightblue */
-position: absolute;
+/* position: absolute; */ // this forces the portfolio contianer ontop of the NavBAr
+
 width: 100%;
 height: 100%;
-background: rgba(245, 245, 245, 0.4); 
+background: rgba(245, 245, 245, 0.1); 
 display: flex;
+flex-direction: row;
 align-items: center;
-justify-content: center
+justify-content: space-between
 `
 
 const PortfolioContainer = ({codeProjects}) => {
@@ -36,14 +38,15 @@ const PortfolioContainer = ({codeProjects}) => {
 
     return (
         <MainBackgroundStyle>
-        <h1>Portfolio container</h1>
         <Routes>
-            <Route path="/"/>
+            <Route path="/" element={<HyperLinks/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="projects" element={<ProjectsList projects={codingProjects}/>} />
             <Route path="contact" element={<Contact/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
+        <h1>Searching For Junior Developer Role.</h1>
+        <div></div>
         </MainBackgroundStyle>
      );
 }

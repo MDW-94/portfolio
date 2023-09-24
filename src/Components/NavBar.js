@@ -2,10 +2,10 @@ import React from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 
-import logo4 from "../logo4.png"
+import logo5 from "../logo5.png"
 
 const NavContainer = styled.div`
-background: rgba(245, 245, 245, 0.5); 
+background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -13,7 +13,7 @@ align-items: center;
 `
 
 const StyledImage = styled.img`
-width: 400px;
+width: 500px;
 margin-left: -38px;
 &:hover {
     /* transition: 5s; */
@@ -33,7 +33,7 @@ margin-left: -38px;
 const RightItems = styled.div`
 display: flex;
 padding: 17.5px;
-margin-right: 20px;
+margin-right: 35px;
 font-family: 'Courier New', Courier, monospace;
 font-weight: 1100;
 align-items: center;
@@ -43,7 +43,7 @@ align-items: center;
 const StyledLink = styled(Link)`
 color: white;
 font-weight: 900;
-font-size: larger;
+font-size: 1.4em;
 text-decoration: none;
 `
 
@@ -74,7 +74,7 @@ const Item3 = styled.div`
 const NavBar = () => {
     return ( 
         <NavContainer>
-        <ul><StyledLink to="/"><StyledImage src={logo4}/></StyledLink></ul> 
+        <ul><StyledLink to="/"><StyledImage src={logo5}/></StyledLink></ul> 
             <RightItems>
                 <ul><StyledLink to="/About"><Item1><h4>About</h4></Item1></StyledLink></ul>
                 <ul><StyledLink to="/Projects"><Item2><h4>Projects</h4></Item2></StyledLink></ul>
