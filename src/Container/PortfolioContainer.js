@@ -22,20 +22,19 @@ justify-content: space-between
 
 const PortfolioContainer = ({codeProjects}) => {
     const [codingProjects, setCodingProjects] = useState([]);
+    const [searchInput, setSearchInput] = useState("");
     // const [selectedProject, setSelectedProject] = useState([]) // for selected project page
 
 
     useEffect(() => {
         loadProjects(codeProjects)
-    }, [])
+    }, [searchInput])
 
     const loadProjects = (data) => {
         setCodingProjects(data)
     }
 
-    const filterListFunction =(() => {
-        return
-    })
+    const filterListFunction =((textInput) => {})
 
     const NotFound = () => <Navigate to="/"/>;
 

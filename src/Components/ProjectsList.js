@@ -59,17 +59,21 @@ const ProjectsList = ({projects, filterListFunction}) => {
         return <ProjectItem key={index} project={project}/>
     })
 
-    const handleText = ((event) => {
-        filterListFunction(event.target.value)
-
+    const handleChange = ((event) => {
+        event.preventDefault();
+        const lowerCase = event.target.value.toLowerCase()
+        // console.log(lowerCase);
+        // setSearchInput(event.target.value)
+        // filterListFunction(lowerCase)
     })
+    
 
     return ( 
         <ProjectsPageContainer>
             <br/>
             <br/>
             <SearchBarElement>
-                <SearchBar type="text" placeholder="- Search for Project Name or Program Language -"/>
+                <SearchBar type="text" placeholder="- Search for Project Name or Program Language -" onChange={handleChange}/>
                 </SearchBarElement>
                 <DisplayContainerMain>
                     {projectItemsList}

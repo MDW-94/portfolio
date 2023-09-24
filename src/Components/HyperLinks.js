@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-import logo16 from '../Images/logo16.png'
+// import logo16 from '../Images/logo16.png'
 import logo17 from '../Images/logo17.png'
 import logo18 from '../Images/logo18.png'
 // import logo19 from '../Images/logo19.png'
@@ -12,6 +12,7 @@ import resume_test from '../Images/resume_test.pdf'
 
 const HyperLinksStyle = styled.div`
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
 align-content: center;
 /* height: 15% */

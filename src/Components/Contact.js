@@ -21,6 +21,8 @@ flex-direction: column;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
+height: 100vh;
+width: 75vw;
 `
 
 const ImageItem1 = styled.img`
