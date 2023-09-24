@@ -38,7 +38,7 @@ const HyperLinks = () => {
             <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18}/></a></ul></div>
             {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
         </HyperLinksStyle>
-        <h1>Searching For Junior Developer Role.</h1>
+        <h1>Looking For A Junior Developer Role.</h1>
         <div></div>
         </>
      );

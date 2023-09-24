@@ -33,6 +33,10 @@ const PortfolioContainer = ({codeProjects}) => {
         setCodingProjects(data)
     }
 
+    const filterListFunction =(() => {
+        return
+    })
+
     const NotFound = () => <Navigate to="/"/>;
 
     return (
@@ -40,7 +44,7 @@ const PortfolioContainer = ({codeProjects}) => {
             <Routes>
                 <Route path="/" element={<HyperLinks/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="projects" element={<ProjectsList projects={codingProjects}/>} />
+                <Route path="projects" element={<ProjectsList projects={codingProjects} filterFunction={filterListFunction}/>} />
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>

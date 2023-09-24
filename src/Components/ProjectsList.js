@@ -9,15 +9,14 @@ height: 76vh;
 width: 100vw;
 padding: 1em;
 align-items: center;
-margin-left: -4.5em;
-/* justify-content: center; */
+margin: auto;
 `
 
 const DisplayContainerMain = styled.div`
 display: grid;
 height: 80vh;
 width: 80vw;
-/* align-items: center; */
+align-items: center;
 /* grid-template-columns: minmax(300px, 3fr) minmax(300px, 3fr) minmax(300px, 3fr) ; */
 /* grid-template-columns: 1fr 2fr;
 padding: 2em;
@@ -28,16 +27,16 @@ const SearchBarElement = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-border: 3px solid antiquewhite;
-width: 70vw;
+border: 2.75px solid antiquewhite;
+width: 50vw;
 margin-left: 5em;
 /* padding: 0.5em; */
 `
 
 const SearchBar = styled.input`
 font-family: 'Courier New', Courier, monospace;
-height: 1.75;
-width: 70vw;
+height: 1.5em;
+width: 50vw;
 font-size: 1.5em;
 font-weight: 800;
 text-align: center;
@@ -47,20 +46,30 @@ color: white;
 /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 &::placeholder{
     color: lightgray;
-    font-weight: 700;
+    font-weight: 800;
+}
+&:hover{
+    opacity: 0.7
 }
 `
 
-const ProjectsList = ({projects}) => {
+const ProjectsList = ({projects, filterListFunction}) => {
 
     const projectItemsList = projects.map((project, index) => {
         return <ProjectItem key={index} project={project}/>
     })
 
+    const handleText = ((event) => {
+        filterListFunction(event.target.value)
+
+    })
+
     return ( 
         <ProjectsPageContainer>
+            <br/>
+            <br/>
             <SearchBarElement>
-                <SearchBar type="text" placeholder="Search Bar"/>
+                <SearchBar type="text" placeholder="- Search for Project Name or Program Language -"/>
                 </SearchBarElement>
                 <DisplayContainerMain>
                     {projectItemsList}

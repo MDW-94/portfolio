@@ -54,7 +54,8 @@ const ProjectsItem = ({project}) => {
             </div>
             <div>
                 <h2>Name: {project.name}</h2>
-                <h3>About: {project.desc}</h3>
+                <h3>{project.desc}</h3>
+                <br/>
                 <h3>Languages: {programLanguages}</h3>
                 {/* <button onClick={handleClick}></button> */}
             </div>
