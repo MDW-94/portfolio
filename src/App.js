@@ -16,8 +16,20 @@ width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
+/* overflow: hidden;
+overflow-y: scroll; */
 /* align-items: center; */
 /* justify-content: center; */
+`
+
+const ScrollFunction = styled.div`
+/* position: absolute; */
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+overflow-y: scroll;
 `
 
 function App() {
@@ -30,7 +42,9 @@ function App() {
     <Router>
       <MainContainStyleUnit>
         <NavBar/>
-        <PortfolioContainer codeProjects={codeProjectsImported}/>
+        <ScrollFunction>
+          <PortfolioContainer codeProjects={codeProjectsImported}/>
+        </ScrollFunction>
       </MainContainStyleUnit>
     </Router>
     </div>

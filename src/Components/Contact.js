@@ -1,6 +1,3 @@
-
-
-// import logo16 from '../Images/logo16.png'
 import logo17 from '../Images/logo17.png'
 import logo18 from '../Images/logo18.png'
 import logo20 from '../Images/logo20.png'
@@ -42,10 +39,10 @@ const Contact = () => {
                     <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem1 src={logo20}/></a></ul></div>
                     <div><ul><a href={resume_test} download><ImageItem1 src={logo17}/></a></ul></div>
                     <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem1 src={logo18}/></a></ul></div>
-                    {/* <div><ul><a href=""><ImageItem1 src={logo16}/></a></ul></div> */}
             </FlexContainer>
             <h3></h3>
         </FlexContainer2>
+        <div></div>
         <div></div>
         </>
      );

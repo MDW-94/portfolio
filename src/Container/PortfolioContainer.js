@@ -11,7 +11,6 @@ import styled from "styled-components";
 
 const MainBackgroundStyle = styled.div`
 /* position: absolute; */ // this forces the portfolio contianer ontop of the NavBAr
-
 width: 100%;
 height: 100%;
 background: rgba(245, 245, 245, 0.1); 
@@ -19,6 +18,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between
+/* overflow-y: scroll; */
 `
 
 const PortfolioContainer = ({codeProjects}) => {
@@ -38,13 +38,13 @@ const PortfolioContainer = ({codeProjects}) => {
 
     return (
         <MainBackgroundStyle>
-        <Routes>
-            <Route path="/" element={<HyperLinks/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="projects" element={<ProjectsList projects={codingProjects}/>} />
-            <Route path="contact" element={<Contact/>}/>
-            <Route path="*" element={<NotFound/>}/>
-        </Routes>
+            <Routes>
+                <Route path="/" element={<HyperLinks/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="projects" element={<ProjectsList projects={codingProjects}/>} />
+                <Route path="contact" element={<Contact/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
         </MainBackgroundStyle>
      );
 }
