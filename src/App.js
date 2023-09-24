@@ -38,15 +38,15 @@ function App() {
 
   return (
     <div className='App'>
-    <BackgroundImageComponent/>
-    <Router>
-      <MainContainStyleUnit>
-        <NavBar/>
-        <ScrollFunction>
-          <PortfolioContainer codeProjects={codeProjectsImported}/>
-        </ScrollFunction>
-      </MainContainStyleUnit>
-    </Router>
+      <BackgroundImageComponent/>
+      <Router>
+        <MainContainStyleUnit>
+          <NavBar/>
+          <ScrollFunction>
+            <PortfolioContainer codeProjects={codeProjectsImported}/>
+          </ScrollFunction>
+        </MainContainStyleUnit>
+      </Router>
     </div>
   );
 }

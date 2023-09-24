@@ -11,7 +11,7 @@ const codeProjects = [
     {name: "Project2",
     desc: "Project description - Used React",
     image: photo2,
-    languages: ["Javascript", "JSX"]},
+    languages: ["Javascript", "JSX", "Python"]},
     {name: "Project3",
     desc: "Project description - Used React",
     image: photo3,

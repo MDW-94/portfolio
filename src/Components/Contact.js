@@ -26,6 +26,11 @@ align-items: center;
 const ImageItem1 = styled.img`
 width: 110px;
 padding: 2.5em;
+&:hover {
+    /* transition: 5s; */
+    opacity: 0.5;
+    transform: scale(1.2);
+}
 `
 
 const Contact = () => {

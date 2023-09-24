@@ -13,7 +13,7 @@ margin-left: -4.5em;
 /* justify-content: center; */
 `
 
-const DisplayConatinerMain = styled.div`
+const DisplayContainerMain = styled.div`
 display: grid;
 height: 80vh;
 width: 80vw;
@@ -25,10 +25,30 @@ grid-gap: 15px; */
 /* overflow-y: scroll; */
 `
 const SearchBarElement = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 border: 3px solid antiquewhite;
-width: 80vw;
+width: 70vw;
 margin-left: 5em;
-padding: 0.5em;
+/* padding: 0.5em; */
+`
+
+const SearchBar = styled.input`
+font-family: 'Courier New', Courier, monospace;
+height: 1.75;
+width: 70vw;
+font-size: 1.5em;
+font-weight: 800;
+text-align: center;
+background: rgba(255, 255, 255, 0.1);
+border: rgba(255, 255, 255, 0);
+color: white;
+/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+&::placeholder{
+    color: lightgray;
+    font-weight: 700;
+}
 `
 
 const ProjectsList = ({projects}) => {
@@ -40,13 +60,13 @@ const ProjectsList = ({projects}) => {
     return ( 
         <ProjectsPageContainer>
             <SearchBarElement>
-                <h3>Search Bar?</h3>
+                <SearchBar type="text" placeholder="Search Bar"/>
                 </SearchBarElement>
-                <DisplayConatinerMain>
+                <DisplayContainerMain>
                     {projectItemsList}
                     {projectItemsList}
                     {projectItemsList}
-                </DisplayConatinerMain>
+                </DisplayContainerMain>
         </ProjectsPageContainer>
      );
 }

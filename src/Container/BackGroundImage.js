@@ -1,12 +1,13 @@
 import React from "react";
 import background1 from '../background1.png'
 
+
 const BackgroundImageComponent = () => {
     const backgroundStyle ={
         backgroundImage: `url(${background1})`,
         backgroundStyle: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: '100vh'
+        height: '100vh',
     };
     return <div style={backgroundStyle}></div>
 

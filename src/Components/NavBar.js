@@ -91,6 +91,8 @@ export default NavBar;
 // - Render the NavBar over the background of each page, so it appears to be floating
 // - Creating animation of line that grows through About, Project and Contact
 
+// {selectedButton? <RightItems>: <img>}
+
 
 // <MainHeading>Matthew Wasylko</MainHeading>
 

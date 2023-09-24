@@ -12,6 +12,7 @@ padding: 3em;
 align-items: center;
 
 
+
 /* grid-template-rows: 50px 1fr 40px; */
 /* grid-template-columns: repeat(6, calc(50% - 40px)); */
 /* grid-template-rows: minmax(150px, 1fr); */
@@ -29,6 +30,22 @@ width: 20em;
 `
 
 const ProjectsItem = ({project}) => {
+
+    const programLanguages = project.languages.map((language, index) =>{
+        if(index == (project.languages.length-1)){
+            return language
+        }
+        return language + ", "
+    })
+
+    const handleClick = (event) => {
+        event.preventDefault()
+        // console.log(project.name)
+        console.log("HI!!!!!!!!!!!!!")
+        // console.log(project.languages)
+    }
+    
+
     return (
         <>
         <DisplayConatiner>
@@ -38,7 +55,8 @@ const ProjectsItem = ({project}) => {
             <div>
                 <h2>Name: {project.name}</h2>
                 <h3>About: {project.desc}</h3>
-                <h3>Languages: {project.language}</h3>
+                <h3>Languages: {programLanguages}</h3>
+                {/* <button onClick={handleClick}></button> */}
             </div>
         </DisplayConatiner>
         </>
