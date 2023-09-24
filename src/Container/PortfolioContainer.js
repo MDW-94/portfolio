@@ -45,8 +45,6 @@ const PortfolioContainer = ({codeProjects}) => {
             <Route path="contact" element={<Contact/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
-        <h1>Searching For Junior Developer Role.</h1>
-        <div></div>
         </MainBackgroundStyle>
      );
 }

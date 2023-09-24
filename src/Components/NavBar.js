@@ -14,7 +14,7 @@ align-items: center;
 
 const StyledImage = styled.img`
 width: 500px;
-margin-left: -38px;
+margin-left: -32.5px;
 &:hover {
     /* transition: 5s; */
     opacity: 0.3;
