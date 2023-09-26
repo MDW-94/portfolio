@@ -53,18 +53,26 @@ color: white;
 }
 `
 
-const ProjectsList = ({projects, filterListFunction}) => {
+const ProjectsList = ({projects, filterFunction, filteredProjects}) => {
 
     const projectItemsList = projects.map((project, index) => {
         return <ProjectItem key={index} project={project}/>
     })
 
+    const projectFilterList = filteredProjects.map((project, index) => {
+        return <ProjectItem key={index} project={project}/>
+    })
+
+
+
+    // const filteredProjectList = filteredProjects.map((project, index) => {
+    //     return <ProjectItem key={index} project={project}/>
+    // })
+
     const handleChange = ((event) => {
         event.preventDefault();
         const lowerCase = event.target.value.toLowerCase()
-        // console.log(lowerCase);
-        // setSearchInput(event.target.value)
-        // filterListFunction(lowerCase)
+        filterFunction(lowerCase)
     })
     
 
@@ -76,9 +84,11 @@ const ProjectsList = ({projects, filterListFunction}) => {
                 <SearchBar type="text" placeholder="- Search for Project Name or Program Language -" onChange={handleChange}/>
                 </SearchBarElement>
                 <DisplayContainerMain>
-                    {projectItemsList}
-                    {projectItemsList}
-                    {projectItemsList}
+                    {filteredProjects.length > 0 ? projectFilterList : projectItemsList} {/* SOMETHING IS HAPPENING HERE*/}
+                    {/* {projectFilterList} */}
+                    {/* {projectItemsList}
+                    {projectItemsList} */}
+
                 </DisplayContainerMain>
         </ProjectsPageContainer>
      );

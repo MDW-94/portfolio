@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DisplayConatiner = styled.div`
 overflow: hidden;
-height: 50vh;
+height: 55vh;
 width: 80vw;
 display: grid;
 grid-template-columns: 1.5fr 3fr;
@@ -38,12 +38,12 @@ const ProjectsItem = ({project}) => {
         return language + ", "
     })
 
-    const handleClick = (event) => {
-        event.preventDefault()
-        // console.log(project.name)
-        console.log("HI!!!!!!!!!!!!!")
-        // console.log(project.languages)
-    }
+    // const handleClick = (event) => {
+    //     event.preventDefault()
+    //     // console.log(project.name)
+    //     console.log("HI!!!!!!!!!!!!!")
+    //     // console.log(project.languages)
+    // }
     
 
     return (
