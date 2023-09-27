@@ -7,7 +7,7 @@ const codeProjects = [
     {name: "Project1",
     desc: "Project description - Used React",
     image: photo1,
-    languages: ["Javascript", "JSX"]}, 
+    languages: ["Javascript", "C++"]}, 
     {name: "Project2",
     desc: "Project description - Used React",
     image: photo2,
@@ -15,7 +15,7 @@ const codeProjects = [
     {name: "Project3",
     desc: "Project description - Used React",
     image: photo3,
-    languages: ["Javascript", "JSX"]}
+    languages: ["Python", "Flask"]}
 ]
 
 export default codeProjects;
