@@ -1,3 +1,26 @@
+# My Portfolio
+
+This React App contains my portfolio which is a list of project, information about me & some links to my social media (including a downloadable resume)
+
+# MVP
+
+- User can visit a projects page, scroll-through, select and read about my projects
+- User can use a searchbar function to find specific projects relevant to the searched programming language (EXT: project descriptions + names)
+- User can be directed to an "About Me" page with a few profiles and text explaining my journey into programming - EXT: A carosel or image selection component of the profiles
+- The Portfolio will adear to the WCAG guidelines - this would hopefully include ARIA tags for users who have access needs
+- The User will be able to view the app on their mobile device without styling, or hindrance to information presented - EXT: this could include optional displays for readability
+
+# EXT
+
+- Use Spline & Cloud Resume Challenge in the development of your portfolio - remember accessibility!
+- Use Blade Runner Palette Colours (remembering accessibility) for highlights and design
+- Include music and photography examples as hobbies and interests
+
+
+
+
+# See Below For Further React Instructions
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
