@@ -19,7 +19,7 @@ flex-direction: column;
 /* overflow: hidden;
 overflow-y: scroll; */
 /* align-items: center; */
-/* justify-content: center; */
+justify-content: center;
 `
 
 const ScrollFunction = styled.div`

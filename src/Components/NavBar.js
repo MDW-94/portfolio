@@ -7,14 +7,15 @@ import logo5 from "../logo5.png"
 const NavContainer = styled.div`
 background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 /* border: 5px solid rgba(240, 240, 240, 0.9); */
 `
 
 const StyledImage = styled.img`
-width: 500px;
-margin-left: -32.5px;
+width: 20.5em;
+margin-left: -1.25em;
 &:hover {
     /* transition: 5s; */
     opacity: 0.3;
@@ -31,8 +32,9 @@ margin-left: -32.5px;
 
 const RightItems = styled.div`
 display: flex;
-padding: 17.5px;
-margin-right: 35px;
+flex-wrap: wrap;
+/* padding: 17.5px; */
+margin-right: 2.1875em;
 font-family: 'Courier New', Courier, monospace;
 font-weight: 1100;
 align-items: center;
