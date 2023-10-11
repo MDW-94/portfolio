@@ -29,7 +29,7 @@ const SearchBar = ({loadQuery}) => {
 
     return ( 
         <>
-        <SearchBarStyle type="text" onChange={handleChange} placeholder="Type programming language"/>
+        <SearchBarStyle type="text" onChange={handleChange} placeholder="Search by programming language"/>
         </>
      );
 }
