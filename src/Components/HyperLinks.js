@@ -9,7 +9,7 @@ import logo20 from '../Images/logo20.png'
 import logo21 from '../Images/logo21.png'
 
 // import resume_test from '../Images/resume_test.pdf'
-import resume1 from '../Images/resume1.pdf'
+import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
 const HyperLinksStyle = styled.div`
 display: flex;
@@ -20,7 +20,7 @@ align-content: center;
 `
 
 const ImageItem = styled.img`
-width: 50px;
+width: 3.125em;
 padding: 0.5em;
 &:hover {
     /* transition: 5s; */
@@ -36,7 +36,7 @@ const HyperLinks = () => {
         <HyperLinksStyle>
             <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21}/></a></ul></div>
             <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20}/></a></ul></div>
-            <div><ul><a href={resume1} download><ImageItem src={logo17}/></a></ul></div>
+            <div><ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17}/></a></ul></div>
             <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18}/></a></ul></div>
             {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
         </HyperLinksStyle>
