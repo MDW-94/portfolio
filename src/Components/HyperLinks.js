@@ -8,7 +8,8 @@ import logo18 from '../Images/logo18.png'
 import logo20 from '../Images/logo20.png'
 import logo21 from '../Images/logo21.png'
 
-import resume_test from '../Images/resume_test.pdf'
+// import resume_test from '../Images/resume_test.pdf'
+import resume1 from '../Images/resume1.pdf'
 
 const HyperLinksStyle = styled.div`
 display: flex;
@@ -35,7 +36,7 @@ const HyperLinks = () => {
         <HyperLinksStyle>
             <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21}/></a></ul></div>
             <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20}/></a></ul></div>
-            <div><ul><a href={resume_test} download><ImageItem src={logo17}/></a></ul></div>
+            <div><ul><a href={resume1} download><ImageItem src={logo17}/></a></ul></div>
             <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18}/></a></ul></div>
             {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
         </HyperLinksStyle>

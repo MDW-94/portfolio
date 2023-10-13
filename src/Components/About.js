@@ -13,7 +13,7 @@ justify-content: center;
 `
 
 const SplineScene = styled.div`
-width: 70%;
+width: 60%;
 `
 
 const Button = styled.button`
@@ -41,7 +41,7 @@ const About = () => {
     function moveObj() {
         console.log(cube.current);
 
-        cube.current.position.x += 10;
+        cube.current.position.x += 1000;
         // cube.current.position.y += 10;
     };
 

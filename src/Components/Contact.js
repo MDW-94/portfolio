@@ -3,7 +3,8 @@ import logo18 from '../Images/logo18.png'
 import logo20 from '../Images/logo20.png'
 import logo21 from '../Images/logo21.png'
 
-import resume_test from '../Images/resume_test.pdf'
+// import resume_test from '../Images/resume_test.pdf'
+import resume1 from '../Images/resume1.pdf'
 
 import styled from "styled-components";
 
@@ -44,7 +45,7 @@ const Contact = () => {
             <FlexContainer>
                     <div><ul><a href="https://github.com/MDW-94"><ImageItem1 src={logo21}/></a></ul></div>
                     <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem1 src={logo20}/></a></ul></div>
-                    <div><ul><a href={resume_test} download><ImageItem1 src={logo17}/></a></ul></div>
+                    <div><ul><a href={resume1} download><ImageItem1 src={logo17}/></a></ul></div>
                     <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem1 src={logo18}/></a></ul></div>
             </FlexContainer>
             <h3></h3>
