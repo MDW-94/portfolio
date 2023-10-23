@@ -31,6 +31,8 @@ const About = () => {
     const cube = useRef();
     const sphere = useRef();
 
+   
+
     function onLoad(spline) {
         const obj = spline.findObjectById('e3bbbd58-74c6-4a77-a642-575ce8c300df');
         const obj2 = spline.findObjectById('69dcbcdb-67e4-492b-b3b2-17ca574a84cd')
@@ -70,3 +72,5 @@ const About = () => {
 export default About;
 
 // https://github.com/splinetool/react-spline
+
+// https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
