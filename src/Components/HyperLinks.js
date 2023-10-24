@@ -17,6 +17,10 @@ flex-wrap: wrap;
 flex-direction: column;
 align-content: center;
 /* height: 15% */
+@media screen and (max-width: 365px){
+    width: 70%;
+    overflow-x: scroll;
+}
 `
 
 const ImageItem = styled.img`
@@ -26,7 +30,13 @@ padding: 0.5em;
     /* transition: 5s; */
     opacity: 0.3;
     /* transform: scale(1.1); */
+}
+`
 
+const TextItem = styled.h1`
+@media screen and (max-width: 365px){
+    font-size: 1.5em;
+    /* position: relative; NEED TO MAKE A POSITION CONTAINER */
 }
 `
 
@@ -40,7 +50,7 @@ const HyperLinks = () => {
             <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18}/></a></ul></div>
             {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
         </HyperLinksStyle>
-        <h1>Looking For A Junior Developer Role.</h1>
+        <TextItem>Looking For A Junior Developer Role.</TextItem>
         <div></div>
         </>
      );

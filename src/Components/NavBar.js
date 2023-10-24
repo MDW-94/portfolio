@@ -92,9 +92,24 @@ align-items: center;
 }
 // Make Navbar routes collapsable @ 460px? w scroll features?
 @media screen and (max-width: 460px){
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
+    font-size: 0.75em;
+    font-weight: 1100;
     justify-content: space-between;
+    /* margin-right: auto; */
+    
+}
+@media screen and (max-width: 365px){
+    /* flex-direction: column; */
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100vw;
+    font-size: 0.75em;
+    font-weight: 1100;
+    justify-content: space-between;
+    overflow-x: scroll;
+    transform: scale(1.75);
     /* margin-right: auto; */
     
 }
@@ -116,7 +131,10 @@ const Item1 = styled.div`
     background-color: lightblue;
     transform: scale(1.2);
     transition: 1s;
-
+}
+@media screen and (max-width: 365px){
+    margin-left: 29vw;
+    margin-right: 10vw;
 }`
 
 const Item2 = styled.div`
@@ -125,6 +143,10 @@ const Item2 = styled.div`
     transform: scale(1.2);
     transition: 1s;
 
+}
+@media screen and (max-width: 365px){
+    margin-left: 10vw;
+    margin-right: 10vw;
 }`
 
 const Item3 = styled.div`
@@ -133,6 +155,10 @@ const Item3 = styled.div`
     transform: scale(1.2);
     transition: 1s;
 
+}
+@media screen and (max-width: 365px){
+    margin-left: 10vw;
+    margin-right: 29vw;
 }`
 
 const NavBar = () => {
