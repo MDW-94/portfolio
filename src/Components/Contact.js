@@ -14,6 +14,26 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
+
+@media screen and (max-width: 615px){
+    margin-top: 28em;
+    transform: scale(auto);
+    padding-bottom: 1em;
+    padding-right: 1em;
+    
+}
+@media screen and (max-width: 365px){
+    justify-content: space-between;
+    margin-top: 60em;
+    padding-bottom: 9em;
+    padding-left: 5vw auto;
+    padding-right: 50vw;
+}
+@media screen and (max-width:330px){
+    padding-left: 2.5 auto;
+    margin-top: 40em;
+    padding-bottom: 8em;
+}
 `
 
 const FlexContainer2 = styled.div`
@@ -33,6 +53,17 @@ padding: 2.5em;
     /* transition: 5s; */
     opacity: 0.5;
     transform: scale(1.2);
+}
+@media screen and (max-width: 365px){
+    margin-top: 7em;
+}
+@media screen and (max-width: 615px){
+    transform: scale(auto);
+    
+}
+@media screen and (max-width:330px){
+    width: 5em;
+    padding: 1em;
 }
 `
 

@@ -25,6 +25,12 @@ align-items: center;
     right: 0;
     left: 0;
 }
+@media screen and (max-width: 365px){
+    margin-top: 2.5em;
+    position: relative;
+    flex-direction: column;
+    
+}
 /* border: 5px solid rgba(240, 240, 240, 0.9); */
 `
 
@@ -104,14 +110,15 @@ align-items: center;
     /* flex-direction: column; */
     position: relative;
     flex-wrap: nowrap;
-    width: 100vw;
+    width: 45vw;
     font-size: 0.75em;
     font-weight: 1100;
     justify-content: space-between;
     overflow-x: scroll;
     transform: scale(1.75);
-    /* margin-right: auto; */
-    
+    margin-right: 0em;
+    padding-right: 0%;
+
 }
 `
 
@@ -133,9 +140,13 @@ const Item1 = styled.div`
     transition: 1s;
 }
 @media screen and (max-width: 365px){
-    margin-left: 29vw;
+    margin-left: 5vw;
     margin-right: 10vw;
-}`
+}
+@media screen and (max-width:330px){
+    margin-left: -6vw;
+}
+`
 
 const Item2 = styled.div`
 &:hover {
@@ -145,7 +156,7 @@ const Item2 = styled.div`
 
 }
 @media screen and (max-width: 365px){
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-right: 10vw;
 }`
 
@@ -157,8 +168,11 @@ const Item3 = styled.div`
 
 }
 @media screen and (max-width: 365px){
-    margin-left: 10vw;
-    margin-right: 29vw;
+    margin-left: 5vw;
+    margin-right: 16vw;
+}
+@media screen and (max-width:330px){
+    margin-right: 12vw;
 }`
 
 const NavBar = () => {
