@@ -27,6 +27,8 @@ const GridItem = styled.div`
 
 const StyledImage2 = styled.img`
 width: 20em;
+/* height: 25em; */
+border-radius: 7.5%;
 `
 
 const ProjectsItem = ({project}) => {

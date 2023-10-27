@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const SearchBarStyle = styled.input`
 font-family: 'Courier New', Courier, monospace;
+border-radius: 30em;
 height: 1.5em;
 width: 50vw;
 font-size: 1.5em;

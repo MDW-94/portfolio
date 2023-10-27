@@ -11,6 +11,7 @@ width: 100vw;
 padding: 1em;
 align-items: center;
 margin: auto;
+
 `
 
 const DisplayContainerMain = styled.div`
@@ -18,6 +19,7 @@ display: grid;
 height: 80vh;
 width: 80vw;
 align-items: center;
+
 /* grid-template-columns: minmax(300px, 3fr) minmax(300px, 3fr) minmax(300px, 3fr) ; */
 /* grid-template-columns: 1fr 2fr;
 padding: 2em;
@@ -27,6 +29,7 @@ grid-gap: 15px; */
 const SearchBarElement = styled.div`
 display: flex;
 flex-direction: column;
+border-radius: 30em;
 align-items: center;
 border: 2.75px solid antiquewhite;
 width: 50vw;
