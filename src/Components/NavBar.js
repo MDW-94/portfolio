@@ -176,7 +176,7 @@ const Item3 = styled.div`
 }`
 
 const NavBar = () => {
-    return ( 
+    return (
         <NavContainer>
         <p><StyledLink to="/"><StyledImage src={logo5}/></StyledLink></p> 
             <RightItems>

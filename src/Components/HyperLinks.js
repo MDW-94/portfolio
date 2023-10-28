@@ -15,11 +15,20 @@ const HyperLinksStyle = styled.div`
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-align-content: center;
-/* height: 15% */
+align-content: left;
+margin-top: -5%;
+margin-bottom: 5%;
 @media screen and (max-width: 365px){
     width: 70%;
     overflow-x: scroll;
+}
+@media screen and (max-width: 460px){
+    margin-top: -10%;
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 895px) {
+    margin-bottom: 3%;
+    margin-top: -4%;
 }
 `
 
@@ -33,26 +42,112 @@ padding: 0.5em;
 }
 `
 
+const ScrollElements = styled.div`
+width: 100vw;
+margin-bottom: 10%;
+margin-left: -0.9vw;
+padding-inline-start: 1em;
+
+position: relative;
+overflow: hidden;
+display: flex;
+white-space: nowrap;
+flex-wrap: nowrap;
+/* border: solid white 2px; */
+
+@media screen and (max-width: 1200px) {
+    margin-bottom: 13%;
+    
+}
+@media screen and (max-width: 1060px) {
+    margin-bottom: 15%;
+    
+}
+@media screen and (max-width: 895px) {
+    margin-bottom: 7%;
+    
+}
+@media screen and (max-width: 460px) {
+    margin-bottom: 12%;
+}
+@media screen and (max-width: 300px){
+    margin-left: -1.2vw;
+    margin-top: -10%;
+
+}
+
+`
+
 const TextItem = styled.h1`
+font-size: 1.15em;
+text-transform: uppercase;
+text-align: center;
+width: 100vw;
+margin: 0;
+margin-inline-start: 100%;
+
+alt: "Searching for a junior developer role";
+
+@media screen and (max-width: 895px){
+    @keyframes animate_text{
+    from {
+        transform: translate3d(100, 0, 0);
+    }
+    to {
+        transform: translate3d(-350%, 0, 0);
+    }}    
+}
+@media screen and (max-width: 530px) {
+    @keyframes animate_text{
+    from {
+        transform: translate3d(100, 0, 0);
+    }
+    to {
+        transform: translate3d(-300%, 0, 0);
+    }}
+    
+}
 @media screen and (max-width: 365px){
-    font-size: 1.5em;
+    font-size: 1em;
     /* position: relative; NEED TO MAKE A POSITION CONTAINER */
 }
+@media screen and (max-width: 300px){
+    font-size: 1em;
+    @keyframes animate_text{
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-150%, 0, 0);
+    }}
+}
+
+animation: animate_text 11s linear infinite;
+
+@keyframes animate_text{
+    from {
+        transform: translate3d(100, 0, 0);
+    }
+    to {
+        transform: translate3d(-450%, 0, 0);
+    }}  
 `
+
 
 const HyperLinks = () => {
     return ( 
-        <>
-        <HyperLinksStyle>
-            <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21}/></a></ul></div>
-            <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20}/></a></ul></div>
-            <div><ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17}/></a></ul></div>
-            <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18}/></a></ul></div>
-            {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
-        </HyperLinksStyle>
-        <TextItem>Looking For A Junior Developer Role.</TextItem>
-        <div></div>
-        </>
+        <div>
+            <ScrollElements>
+                <TextItem>Looking For A Junior Developer Role.</TextItem>
+                </ScrollElements>
+                    <HyperLinksStyle>
+                        <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul></div>
+                        <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20} alt="a link to my linked in profile"/></a></ul></div>
+                        <div><ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17} alt="download my resume"/></a></ul></div>
+                        <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18} alt="a link to my email address"/></a></ul></div>
+                        {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
+                    </HyperLinksStyle>
+        </div>
      );
 }
  

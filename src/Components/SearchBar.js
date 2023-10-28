@@ -5,13 +5,24 @@ font-family: 'Courier New', Courier, monospace;
 border-radius: 30em;
 height: 1.5em;
 width: 50vw;
-font-size: 1.5em;
+font-size: 1.2em;
 font-weight: 800;
 text-align: center;
+
 background: rgba(255, 255, 255, 0.1);
 border: rgba(255, 255, 255, 0);
 color: white;
-/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+
+@media screen and (max-width: 750px){
+    width: 48vw;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 650px){
+    width: 48vw;
+    font-size: 1em;
+}
+
 &::placeholder{
     color: lightgray;
     font-weight: 800;
