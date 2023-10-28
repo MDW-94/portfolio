@@ -10,7 +10,8 @@ height: 76vh;
 width: 100vw;
 padding: 1em;
 align-items: center;
-margin: auto;
+margin-top: auto;
+/* margin: auto; */
 
 `
 
@@ -58,3 +59,5 @@ const ProjectsList = ({projects, loadQuery}) => {
 }
  
 export default ProjectsList;
+
+// My phone screen is 395x610px

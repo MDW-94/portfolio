@@ -21,10 +21,11 @@ margin-bottom: 5%;
 @media screen and (max-width: 365px){
     width: 70%;
     overflow-x: scroll;
+    margin-bottom: -5%;
 }
 @media screen and (max-width: 460px){
-    margin-top: -10%;
-    margin-bottom: 10%;
+    margin-top: -20%;
+    /* margin-bottom: 10%; */
 }
 @media screen and (max-width: 895px) {
     margin-bottom: 3%;
@@ -73,7 +74,19 @@ flex-wrap: nowrap;
 @media screen and (max-width: 300px){
     margin-left: -1.2vw;
     margin-top: -10%;
+}
 
+@media screen and (max-height: 660px) {
+    margin-top: 20%;
+}
+@media screen and (max-height: 580px) {
+    margin-top: 30%;
+}
+@media screen and (max-height: 560px) {
+    margin-top: 60%;
+}
+@media screen and (max-height: 470px) {
+    margin-top: 80%;
 }
 
 `
@@ -83,6 +96,7 @@ font-size: 1.15em;
 text-transform: uppercase;
 text-align: center;
 width: 100vw;
+margin-top: 1em;
 margin: 0;
 margin-inline-start: 100%;
 
@@ -122,7 +136,7 @@ alt: "Searching for a junior developer role";
     }}
 }
 
-animation: animate_text 11s linear infinite;
+animation: animate_text 13s linear infinite;
 
 @keyframes animate_text{
     from {
@@ -133,10 +147,11 @@ animation: animate_text 11s linear infinite;
     }}  
 `
 
-
 const HyperLinks = () => {
     return ( 
         <div>
+            <br></br>
+            <br></br>
             <ScrollElements>
                 <TextItem>Looking For A Junior Developer Role.</TextItem>
                 </ScrollElements>
@@ -152,7 +167,3 @@ const HyperLinks = () => {
 }
  
 export default HyperLinks;
-
-{/* <div><ul><a href=""><ImageItem src={logo19}/></a></ul></div> */}
-
-//make phone number bu

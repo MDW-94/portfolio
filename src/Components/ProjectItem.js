@@ -11,14 +11,6 @@ grid-gap: 3em;
 padding: 3em;
 align-items: center;
 
-
-
-/* grid-template-rows: 50px 1fr 40px; */
-/* grid-template-columns: repeat(6, calc(50% - 40px)); */
-/* grid-template-rows: minmax(150px, 1fr); */
-/* grid-column: 1/-1; */
-/* padding-left: 4em; */
-/* overflow-y: scroll; */
 `
 
 const GridItem = styled.div`

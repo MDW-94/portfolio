@@ -28,35 +28,35 @@ background-color: white;
 
 const About = () => {
 
-    const cube = useRef();
-    const sphere = useRef();
+    // const cube = useRef();
+    // const sphere = useRef();
 
    
 
-    function onLoad(spline) {
-        const obj = spline.findObjectById('e3bbbd58-74c6-4a77-a642-575ce8c300df');
-        const obj2 = spline.findObjectById('69dcbcdb-67e4-492b-b3b2-17ca574a84cd')
-        cube.current = obj
-        sphere.current = obj2
-    }
+    // function onLoad(spline) {
+    //     const obj = spline.findObjectById('e3bbbd58-74c6-4a77-a642-575ce8c300df');
+    //     const obj2 = spline.findObjectById('69dcbcdb-67e4-492b-b3b2-17ca574a84cd')
+    //     cube.current = obj
+    //     sphere.current = obj2
+    // }
 
-    function moveObj() {
-        console.log(cube.current);
+    // function moveObj() {
+    //     console.log(cube.current);
 
-        cube.current.position.x += 1000;
-        // cube.current.position.y += 10;
-    };
+    //     cube.current.position.x += 1000;
+    //     // cube.current.position.y += 10;
+    // };
 
-    function moveObj2() {
-        console.log(sphere.current);
-        sphere.current.position.x += 100;
-    };
+    // function moveObj2() {
+    //     console.log(sphere.current);
+    //     sphere.current.position.x += 100;
+    // };
 
 
     return ( 
         <AboutStyle>
             <h1>I am the About Page - Hello!</h1>
-            <SplineScene>
+            {/* <SplineScene>
             {onLoad ? <Spline
             scene="https://prod.spline.design/QhRn0ppxQkt44IOm/scene.splinecode"
             onLoad={onLoad}
@@ -64,7 +64,7 @@ const About = () => {
             </SplineScene>
             <br></br>
             <Button type="button" onClick={moveObj}>Move Object</Button>
-            <Button type="button" onClick={moveObj2}>Move Object 2</Button>
+            <Button type="button" onClick={moveObj2}>Move Object 2</Button> */}
         </AboutStyle>
      );
 }
