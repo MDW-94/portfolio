@@ -7,7 +7,8 @@ import logo5 from "../logo5.png"
 // media screen and max-width properties need to be added - all navbar links and logo must be visible through different styling of the app
 
 const NavContainer = styled.div`
-background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey
+/* background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey */
+background-color: rgba(249, 105, 14, 0.40);
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -16,9 +17,6 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 70%; */
-    /* padding-left: 50%;
-    padding-right: 50%; */
 }
 @media screen and (max-width: 600px){
     position: relative;
@@ -31,16 +29,13 @@ align-items: center;
     flex-direction: column;
     
 }
-/* border: 5px solid rgba(240, 240, 240, 0.9); */
 `
 
 const StyledImage = styled.img`
 width: 20.5em;
 margin-left: 0em;
 &:hover {
-    /* transition: 5s; */
     opacity: 0.3;
-    /* transform: scale(1.1); */
 }
 @media screen and (max-width: 895px){
     display: flex;
@@ -56,19 +51,9 @@ margin-left: 0em;
 }
 `
 
-// const MainHeading = styled.h2`
-// padding: 0px;
-// font-family: 'Courier New', Courier, monospace;
-// font-weight: 800;
-// font-size: 25px;
-// `
-
-
 const RightItems = styled.div`
 display: flex;
 flex-wrap: wrap;
-/* width: 1.5em; */
-/* padding: 17.5px; */
 margin-right: 2.1875em;
 font-family: 'Courier New', Courier, monospace;
 font-weight: 1100;
@@ -96,7 +81,6 @@ align-items: center;
     padding-right: 10%;
     
 }
-// Make Navbar routes collapsable @ 460px? w scroll features?
 @media screen and (max-width: 460px){
     /* flex-direction: column; */
     width: 100%;
@@ -189,15 +173,3 @@ const NavBar = () => {
 }
  
 export default NavBar;
-
-// THINGS STILL NEEDED TO BE DONE:
-// - Collapsable 'Show More' menu beside About, Project, Contact 
-// - Render the NavBar over the background of each page, so it appears to be floating
-// - Creating animation of line that grows through About, Project and Contact
-
-// {selectedButton? <RightItems>: <img>}
-
-
-// <MainHeading>Matthew Wasylko</MainHeading>
-
-// {/* <StyledImage src={logo1}/> */}

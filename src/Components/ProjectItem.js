@@ -10,6 +10,12 @@ grid-template-columns: 1.5fr 3fr;
 grid-gap: 3em;
 padding: 1.5em;
 align-items: center;
+overflow-x: scroll;
+
+@media screen and (max-width: 600px){
+    width: 70vw;
+    
+}
 
 `
 
@@ -19,11 +25,24 @@ const GridItem = styled.div`
 
 const StyledImage2 = styled.img`
 width: 20em;
-/* height: 25em; */
+background-image: contain;
+aspect-ratio: 100%;
 border-radius: 7.5%;
 
 @media screen and (max-width: 730px){
     width: 15em;
+}
+`
+
+const TextContainerStyle = styled.div`
+padding: 1.75em;
+width: 100%;
+border-radius: 10%;
+background-color: rgba(249, 105, 14, 0.40);
+
+@media screen and (max-width: 600px){
+    margin-right: 5em;
+    
 }
 `
 
@@ -50,13 +69,13 @@ const ProjectsItem = ({project}) => {
             <div>
                 <StyledImage2 src={project.image}/>
             </div>
-            <div>
+            <TextContainerStyle>
                 <h2>Name: {project.name}</h2>
-                <h3>{project.desc}</h3>
+                <p>{project.desc}</p>
                 <br/>
-                <h3>Languages: {programLanguages}</h3>
+                <h4>Languages: {programLanguages}</h4>
                 {/* <button onClick={handleClick}></button> */}
-            </div>
+            </TextContainerStyle>
         </DisplayConatiner>
         </>
     );

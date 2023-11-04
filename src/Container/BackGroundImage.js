@@ -3,7 +3,6 @@ import background1 from '../background1.png'
 import styled from "styled-components";
 
 const TextContainer = styled.div`
-/* text-align: end; */
 position: absolute;
 bottom: 0;
 right: 0;
@@ -12,16 +11,27 @@ padding: 0.12em;
 font-weight: 800;
 `
 
+const BackgroundImageStyle = styled.div`
+    background-size: 200vh;
+    size: absolute;
+    filter: contrast(120%);
+
+@media screen and (max-height: 500px){
+    background-size: 150vw;
+
+    
+}
+`
+
 const BackgroundImageComponent = () => {
     const backgroundStyle ={
         backgroundImage: `url(${background1})`,
-        backgroundStyle: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '100vh',
     };
     return (
         <>
-    <div style={backgroundStyle}><TextContainer><h4>© 2023 M. Wasylko</h4></TextContainer></div>
+    <BackgroundImageStyle style={backgroundStyle}><TextContainer><h4>© 2023 M. Wasylko</h4></TextContainer></BackgroundImageStyle>
     </>
     )
 };

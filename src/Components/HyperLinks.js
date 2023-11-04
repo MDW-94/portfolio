@@ -11,7 +11,7 @@ import logo21 from '../Images/logo21.png'
 // import resume_test from '../Images/resume_test.pdf'
 import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
-const HyperLinksStyle = styled.div`
+const HyperLinksStyle = styled.li`
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
@@ -25,7 +25,6 @@ margin-bottom: 5%;
 }
 @media screen and (max-width: 460px){
     margin-top: -20%;
-    /* margin-bottom: 10%; */
 }
 @media screen and (max-width: 895px) {
     margin-bottom: 3%;
@@ -36,60 +35,11 @@ margin-bottom: 5%;
 const ImageItem = styled.img`
 width: 3.125em;
 padding: 0.5em;
+aspect-ratio: 1/1;
 &:hover {
-    /* transition: 5s; */
     opacity: 0.3;
-    /* transform: scale(1.1); */
 }
 `
-
-// const ScrollElements = styled.div`
-// width: 100vw;
-// margin-bottom: 10%;
-// margin-left: -0.9vw;
-// padding-inline-start: 1em;
-
-// position: relative;
-// overflow: hidden;
-// display: flex;
-// white-space: nowrap;
-// flex-wrap: nowrap;
-// /* border: solid white 2px; */
-
-// @media screen and (max-width: 1200px) {
-//     margin-bottom: 13%;
-    
-// }
-// @media screen and (max-width: 1060px) {
-//     margin-bottom: 15%;
-    
-// }
-// @media screen and (max-width: 895px) {
-//     margin-bottom: 7%;
-    
-// }
-// @media screen and (max-width: 460px) {
-//     margin-bottom: 12%;
-// }
-// @media screen and (max-width: 300px){
-//     margin-left: -1.2vw;
-//     margin-top: -10%;
-// }
-
-// @media screen and (max-height: 660px) {
-//     margin-top: 20%;
-// }
-// @media screen and (max-height: 580px) {
-//     margin-top: 30%;
-// }
-// @media screen and (max-height: 560px) {
-//     margin-top: 60%;
-// }
-// @media screen and (max-height: 470px) {
-//     margin-top: 80%;
-// }
-
-// `
 
 const TextItem = styled.h1`
 font-size: 1.15em;
@@ -99,62 +49,23 @@ flex-wrap: wrap;
 width: 100vw;
 margin-top: 1em;
 margin: 1em;
-/* margin-right: 5em; */
-/* margin-inline-start: 100%; */
+font-weight: 1000em;
 
 @media screen and (max-width: 580px) {
-    margin-top: 4em;
+    margin-top: 5em;
     width: 80vw;
     margin-left: 10vw;
     margin-right: 10vw;
     
 }
 
-alt: "Searching for a junior developer role";
-
-/* @media screen and (max-width: 895px){
-    @keyframes animate_text{
-    from {
-        transform: translate3d(100, 0, 0);
-    }
-    to {
-        transform: translate3d(-350%, 0, 0);
-    }}    
-}
-@media screen and (max-width: 530px) {
-    @keyframes animate_text{
-    from {
-        transform: translate3d(100, 0, 0);
-    }
-    to {
-        transform: translate3d(-300%, 0, 0);
-    }}
+@media screen and (max-width: 895px){
+    margin-top: 3em;
     
 }
-@media screen and (max-width: 365px){
-    font-size: 1em;
-    /* position: relative; NEED TO MAKE A POSITION CONTAINER */
-/* } */
-/* @media screen and (max-width: 300px){
-    font-size: 1em;
-    @keyframes animate_text{
-    from {
-        transform: translate3d(0, 0, 0);
-    }
-    to {
-        transform: translate3d(-150%, 0, 0);
-    }}
-} */
 
-/* animation: animate_text 13s linear infinite;
+alt: "Searching for a junior developer role";
 
-@keyframes animate_text{
-    from {
-        transform: translate3d(100, 0, 0);
-    }
-    to {
-        transform: translate3d(-450%, 0, 0);
-    }}   */
 `
 
 const HyperLinks = () => {
@@ -162,15 +73,12 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-            {/* <ScrollElements> */}
                 <TextItem>- Looking For A Junior Developer Role -</TextItem><br></br>
-                {/* </ScrollElements> */}
                     <HyperLinksStyle>
-                        <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul></div>
-                        <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20} alt="a link to my linked in profile"/></a></ul></div>
-                        <div><ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17} alt="download my resume"/></a></ul></div>
-                        <div><ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18} alt="a link to my email address"/></a></ul></div>
-                        {/* <div><ul><a href="tel:"><ImageItem src={logo16}/></a></ul></div> */}
+                        <ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul>
+                        <ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20} alt="a link to my linked in profile"/></a></ul>
+                        <ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17} alt="download my resume"/></a></ul>
+                        <ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18} alt="a link to my email address"/></a></ul>
                     </HyperLinksStyle>
         </div>
      );

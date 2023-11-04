@@ -36,6 +36,10 @@ border: 2.75px solid antiquewhite;
 width: 50vw;
 margin-left: 5em;
 /* padding: 0.5em; */
+
+@media screen and (max-width: 600px){
+    margin-left: 0%;
+}
 `
 
 const ProjectsList = ({projects, loadQuery}) => {
