@@ -8,7 +8,7 @@ width: 80vw;
 display: grid;
 grid-template-columns: 1.5fr 3fr;
 grid-gap: 3em;
-padding: 3em;
+padding: 1.5em;
 align-items: center;
 
 `
@@ -21,6 +21,10 @@ const StyledImage2 = styled.img`
 width: 20em;
 /* height: 25em; */
 border-radius: 7.5%;
+
+@media screen and (max-width: 730px){
+    width: 15em;
+}
 `
 
 const ProjectsItem = ({project}) => {

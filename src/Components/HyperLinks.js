@@ -43,66 +43,76 @@ padding: 0.5em;
 }
 `
 
-const ScrollElements = styled.div`
-width: 100vw;
-margin-bottom: 10%;
-margin-left: -0.9vw;
-padding-inline-start: 1em;
+// const ScrollElements = styled.div`
+// width: 100vw;
+// margin-bottom: 10%;
+// margin-left: -0.9vw;
+// padding-inline-start: 1em;
 
-position: relative;
-overflow: hidden;
-display: flex;
-white-space: nowrap;
-flex-wrap: nowrap;
-/* border: solid white 2px; */
+// position: relative;
+// overflow: hidden;
+// display: flex;
+// white-space: nowrap;
+// flex-wrap: nowrap;
+// /* border: solid white 2px; */
 
-@media screen and (max-width: 1200px) {
-    margin-bottom: 13%;
+// @media screen and (max-width: 1200px) {
+//     margin-bottom: 13%;
     
-}
-@media screen and (max-width: 1060px) {
-    margin-bottom: 15%;
+// }
+// @media screen and (max-width: 1060px) {
+//     margin-bottom: 15%;
     
-}
-@media screen and (max-width: 895px) {
-    margin-bottom: 7%;
+// }
+// @media screen and (max-width: 895px) {
+//     margin-bottom: 7%;
     
-}
-@media screen and (max-width: 460px) {
-    margin-bottom: 12%;
-}
-@media screen and (max-width: 300px){
-    margin-left: -1.2vw;
-    margin-top: -10%;
-}
+// }
+// @media screen and (max-width: 460px) {
+//     margin-bottom: 12%;
+// }
+// @media screen and (max-width: 300px){
+//     margin-left: -1.2vw;
+//     margin-top: -10%;
+// }
 
-@media screen and (max-height: 660px) {
-    margin-top: 20%;
-}
-@media screen and (max-height: 580px) {
-    margin-top: 30%;
-}
-@media screen and (max-height: 560px) {
-    margin-top: 60%;
-}
-@media screen and (max-height: 470px) {
-    margin-top: 80%;
-}
+// @media screen and (max-height: 660px) {
+//     margin-top: 20%;
+// }
+// @media screen and (max-height: 580px) {
+//     margin-top: 30%;
+// }
+// @media screen and (max-height: 560px) {
+//     margin-top: 60%;
+// }
+// @media screen and (max-height: 470px) {
+//     margin-top: 80%;
+// }
 
-`
+// `
 
 const TextItem = styled.h1`
 font-size: 1.15em;
 text-transform: uppercase;
 text-align: center;
+flex-wrap: wrap;
 width: 100vw;
 margin-top: 1em;
-margin: 0;
-margin-inline-start: 100%;
+margin: 1em;
+/* margin-right: 5em; */
+/* margin-inline-start: 100%; */
+
+@media screen and (max-width: 580px) {
+    margin-top: 4em;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+}
 
 alt: "Searching for a junior developer role";
 
-@media screen and (max-width: 895px){
+/* @media screen and (max-width: 895px){
     @keyframes animate_text{
     from {
         transform: translate3d(100, 0, 0);
@@ -124,8 +134,8 @@ alt: "Searching for a junior developer role";
 @media screen and (max-width: 365px){
     font-size: 1em;
     /* position: relative; NEED TO MAKE A POSITION CONTAINER */
-}
-@media screen and (max-width: 300px){
+/* } */
+/* @media screen and (max-width: 300px){
     font-size: 1em;
     @keyframes animate_text{
     from {
@@ -134,9 +144,9 @@ alt: "Searching for a junior developer role";
     to {
         transform: translate3d(-150%, 0, 0);
     }}
-}
+} */
 
-animation: animate_text 13s linear infinite;
+/* animation: animate_text 13s linear infinite;
 
 @keyframes animate_text{
     from {
@@ -144,7 +154,7 @@ animation: animate_text 13s linear infinite;
     }
     to {
         transform: translate3d(-450%, 0, 0);
-    }}  
+    }}   */
 `
 
 const HyperLinks = () => {
@@ -152,9 +162,9 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-            <ScrollElements>
-                <TextItem>Looking For A Junior Developer Role.</TextItem>
-                </ScrollElements>
+            {/* <ScrollElements> */}
+                <TextItem>- Looking For A Junior Developer Role -</TextItem><br></br>
+                {/* </ScrollElements> */}
                     <HyperLinksStyle>
                         <div><ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul></div>
                         <div><ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20} alt="a link to my linked in profile"/></a></ul></div>
