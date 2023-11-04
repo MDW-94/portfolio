@@ -36,7 +36,7 @@ border-radius: 7.5%;
 
 const TextContainerStyle = styled.div`
 padding: 1.75em;
-width: 100%;
+width: 80%;
 border-radius: 10%;
 background-color: rgba(249, 105, 14, 0.40);
 

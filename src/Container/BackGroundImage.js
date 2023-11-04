@@ -16,10 +16,18 @@ const BackgroundImageStyle = styled.div`
     size: absolute;
     filter: contrast(120%);
 
-@media screen and (max-height: 500px){
-    background-size: 150vw;
 
-    
+@media screen and (max-height: 750px){
+    background-size: 150vw;
+}
+@media screen and (max-height: 800px){
+    /* background-size: 200%; */
+}
+@media screen and (max-width: 775px){
+    background-size: 200vh;
+}
+@media screen and (max-height: 250px){
+    background-size: 250vw;
 }
 `
 
