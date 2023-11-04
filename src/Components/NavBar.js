@@ -49,6 +49,8 @@ margin-left: 0em;
     width: 100%;
     margin-left: 0.25%;
 }
+
+alt = "Matthew David Wasylko"
 `
 
 const RightItems = styled.div`
