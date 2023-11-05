@@ -19,10 +19,6 @@ overflow-x: scroll;
 
 `
 
-const GridItem = styled.div`
-
-`
-
 const StyledImage2 = styled.img`
 width: 20em;
 background-image: contain;
@@ -32,6 +28,14 @@ border-radius: 7.5%;
 @media screen and (max-width: 730px){
     width: 15em;
 }
+
+&:hover {
+    opacity: 0.75;
+    outline: solid lightcoral 3px;
+
+    /* border: 0.2em solid lightcoral; */
+    transition: 0.6s;
+}
 `
 
 const TextContainerStyle = styled.div`
@@ -39,6 +43,8 @@ padding: 1.75em;
 width: 80%;
 border-radius: 10%;
 background-color: rgba(4, 59, 92, 0.60);
+
+font-weight: 500;
 
 @media screen and (max-width: 600px){
     margin-right: 5em;
@@ -70,10 +76,10 @@ const ProjectsItem = ({project}) => {
                 <StyledImage2 src={project.image}/>
             </div>
             <TextContainerStyle>
-                <h2>Name: {project.name}</h2>
+                <h3>Name: {project.name}</h3>
                 <p>{project.desc}</p>
                 <br/>
-                <h4>Languages: {programLanguages}</h4>
+                <p>Languages: {programLanguages}</p>
                 {/* <button onClick={handleClick}></button> */}
             </TextContainerStyle>
         </DisplayConatiner>
