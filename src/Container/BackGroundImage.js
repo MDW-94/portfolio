@@ -26,9 +26,15 @@ const BackgroundImageStyle = styled.div`
 @media screen and (max-width: 775px){
     background-size: 200vh;
 }
+
+@media screen and (max-height: 380px){
+    background-size: cover;
+}
 @media screen and (max-height: 250px){
     background-size: 250vw;
 }
+
+
 `
 
 const BackgroundImageComponent = () => {

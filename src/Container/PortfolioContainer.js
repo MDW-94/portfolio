@@ -14,7 +14,6 @@ const MainBackgroundStyle = styled.div`
 width: 100%;
 height: 100%;
 overflow: visible;
-/* background: rgba(245, 245, 245, 0.1);  */
 display: flex;
 flex-direction: row;
 align-items: center;

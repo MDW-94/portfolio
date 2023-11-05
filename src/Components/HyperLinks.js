@@ -42,14 +42,28 @@ aspect-ratio: 1/1;
 `
 
 const TextItem = styled.h1`
+
 font-size: 1.15em;
 text-transform: uppercase;
 text-align: center;
 flex-wrap: wrap;
-width: 100vw;
+width: 55vw;
 margin-top: 1em;
 margin: 1em;
 font-weight: 1000em;
+margin-left: 25vw;
+
+
+
+background-color: rgb(4, 59, 92, 0.6);
+
+@media screen and (max-width: 400px) {
+    margin-top: 8em;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+}
 
 @media screen and (max-width: 580px) {
     margin-top: 5em;
@@ -62,6 +76,22 @@ font-weight: 1000em;
 @media screen and (max-width: 895px){
     margin-top: 3em;
     
+}
+
+@media screen and (max-height: 650px){
+    margin-top: 8em;
+}
+
+@media screen and (max-height: 560px){
+    margin-top: 12em;
+}
+
+@media screen and (max-height: 500px){
+    margin-top: 18em;
+}
+
+@media screen and (max-height: 370px){
+    margin-top: 22em;
 }
 
 alt: "Searching for a junior developer role";

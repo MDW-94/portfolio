@@ -8,7 +8,7 @@ import logo5 from "../logo5.png"
 
 const NavContainer = styled.div`
 /* background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey */
-background-color: rgba(249, 105, 14, 0.40);
+background-color: rgba(4, 59, 92, 0.60);
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;

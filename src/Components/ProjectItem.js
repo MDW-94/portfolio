@@ -38,7 +38,7 @@ const TextContainerStyle = styled.div`
 padding: 1.75em;
 width: 80%;
 border-radius: 10%;
-background-color: rgba(249, 105, 14, 0.40);
+background-color: rgba(4, 59, 92, 0.60);
 
 @media screen and (max-width: 600px){
     margin-right: 5em;

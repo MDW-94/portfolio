@@ -9,7 +9,7 @@ font-size: 1.2em;
 font-weight: 800;
 text-align: center;
 
-background: rgba(249, 105, 14, 0.30);
+background: rgba(4, 59, 92, 0.40);
 border: rgba(255, 255, 255, 0);
 color: white;
 
