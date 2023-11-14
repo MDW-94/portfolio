@@ -19,8 +19,8 @@ const About = () => {
 
     return ( 
         <AboutStyle>
-            <h1>I am the About Page - Hello!</h1>
-            <Carousel/>
+            <h1>Page Under Construction</h1>
+            {/* <Carousel/> */}
         </AboutStyle>
      );
 }

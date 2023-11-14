@@ -18,7 +18,6 @@ overflow-x: scroll;
 }
 
 `
-
 const StyledImage2 = styled.img`
 width: 20em;
 background-image: contain;
@@ -37,7 +36,6 @@ border-radius: 7.5%;
     transition: 0.6s;
 }
 `
-
 const TextContainerStyle = styled.div`
 padding: 1.75em;
 width: 80%;
