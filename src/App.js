@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import NavBar from './Components/NavBar';
 import PortfolioContainer from './Container/PortfolioContainer'
 
 import codeProjects from './Data';
+import Loading from './Loading';
 
 import BackgroundImageComponent from './Container/BackGroundImage';
 import './App.css';
@@ -32,7 +34,21 @@ overflow: hidden;
 overflow-y: scroll;
 `
 
+const LoadingBackground = styled.div`
+
+`
+
 function App() {
+
+  const[loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3300)
+  }, []);
+
+  if (loading) {
+    return <Loading/>;
+  }
 
   const codeProjectsImported = codeProjects
 
@@ -52,3 +68,5 @@ function App() {
 }
 
 export default App;
+
+// package.json ,
