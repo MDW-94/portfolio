@@ -19,7 +19,7 @@ const About = () => {
 
     return ( 
         <AboutStyle>
-            <h1>Page Under Construction</h1>
+            <p>Page Under Construction</p>
             {/* <Carousel/> */}
         </AboutStyle>
      );
