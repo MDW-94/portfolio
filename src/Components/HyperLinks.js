@@ -13,22 +13,26 @@ import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
 const HyperLinksStyle = styled.li`
 display: flex;
+width: 100vw;
 flex-wrap: wrap;
-flex-direction: column;
+flex-direction: row;
+justify-content: center;
 align-content: left;
+margin-left: -16px;
 margin-top: -5%;
 margin-bottom: 5%;
 @media screen and (max-width: 365px){
-    width: 70%;
+    width: 100%;
     overflow-x: scroll;
-    margin-bottom: -5%;
+    margin-bottom: 5%;
 }
 @media screen and (max-width: 460px){
-    margin-top: -20%;
+    
 }
 @media screen and (max-width: 895px) {
     margin-bottom: 3%;
     margin-top: -4%;
+    padding-bottom: 2em;
 }
 `
 
@@ -41,21 +45,25 @@ aspect-ratio: 1/1;
 }
 `
 
-const TextItem = styled.h1`
+const TextContainer = styled.div`
+display: flex;
+justify-content: center;
+`
 
-font-size: 1.15em;
+const TextItem = styled.p`
+font-size: 1.25em;
 text-transform: uppercase;
 text-align: center;
-flex-wrap: wrap;
-width: 55vw;
+
+text-wrap: balance;
 margin-top: 1em;
-margin: 1em;
 font-weight: 1000em;
-margin-left: 25vw;
+margin-left: 20vw;
+margin-right: 20vw;
+margin-bottom: 5em;
 
 
-
-background-color: rgb(4, 59, 92, 0.6);
+background-color: rgb(4, 59, 92, 0.7);
 
 @media screen and (max-width: 400px) {
     margin-top: 8em;
@@ -75,6 +83,7 @@ background-color: rgb(4, 59, 92, 0.6);
 
 @media screen and (max-width: 895px){
     margin-top: 3em;
+    margin-bottom: 3em;
     
 }
 
@@ -91,7 +100,8 @@ background-color: rgb(4, 59, 92, 0.6);
 }
 
 @media screen and (max-height: 370px){
-    margin-top: 22em;
+    margin-top: 20em;
+    flex-wrap: wrap;
 }
 
 alt: "Searching for a junior developer role";
@@ -103,7 +113,8 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-                <TextItem>- Looking For A Junior Developer Role -</TextItem><br></br>
+                <TextContainer><TextItem>- Looking For A Junior Developer Role -</TextItem></TextContainer>
+                <br></br>
                     <HyperLinksStyle>
                         <ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul>
                         <ul><a href="https://linkedin.com/in/matthew-david-wasylko-75614b224"><ImageItem src={logo20} alt="a link to my linked in profile"/></a></ul>
