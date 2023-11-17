@@ -104,7 +104,7 @@ background-color: rgb(4, 59, 92, 0.7);
     flex-wrap: wrap;
 }
 
-alt: "Searching for a junior developer role";
+alt: "Searching for a new developer role";
 
 `
 
@@ -113,7 +113,7 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-                <TextContainer><TextItem>- Looking For A Junior Developer Role -</TextItem></TextContainer>
+                <TextContainer><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
                 <br></br>
                     <HyperLinksStyle>
                         <ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul>
