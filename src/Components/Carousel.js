@@ -97,25 +97,23 @@ border-radius: 2em;
 
 
 
-
-
 const Carousel = () => {
 
     var slidePosition = 1;
     /* SlideshowContainer(slidePosition); */
 
-    function plusSlides(n) {
+    const plusSlides = (n) => {
         SlideshowContainer(slidePosition += n);
     }
 
-    function currentSlides(n){
+    const currentSlides = (n) => {
         SlideshowContainer(slidePosition = n);
     }
 
-    function SlideShow(n){
-        var i;
-        var slides = Containers;
-        var circles = DotStyle;
+    const SlideShow = (n) => {
+        let i;
+        let slides = Containers;
+        let circles = DotStyle;
 
         if(n > slides.length) {slidePosition =1 }
         if(n < 1) {slidePosition = slides.length}
