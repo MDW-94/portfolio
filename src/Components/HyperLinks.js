@@ -48,11 +48,11 @@ aspect-ratio: 1/1;
 `
 
 const ProfileImage = styled.img`
-border-radius: 100px;
-width: 30em;
+border-radius: 15%;
+width: 35%;
 
 @media screen and (max-width: 640px) {
-    width: 50%;
+    width: 45%;
     border-radius: 20%;
     
     
@@ -66,7 +66,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 15px;
+gap: 5%;
+
+@media screen and (max-width: 400px) {
+    margin-top: 50%;
+    
+}
 `
 
 const TextItem = styled.p`

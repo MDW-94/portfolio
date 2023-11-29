@@ -58,6 +58,7 @@ function App() {
       <Router>
         <MainContainStyleUnit>
           <NavBar/>
+          {/* Add search bar here? */}
           <ScrollFunction>
             <PortfolioContainer codeProjects={codeProjectsImported}/>
           </ScrollFunction>
