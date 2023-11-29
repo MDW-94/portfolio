@@ -13,6 +13,7 @@ font-weight: 800;
 
 const BackgroundImageStyle = styled.div`
     background-size: 200vh;
+    overflow: hidden;
     size: absolute;
     filter: contrast(120%);
 
