@@ -8,6 +8,8 @@ import logo18 from '../Images/logo18.png'
 import logo20 from '../Images/logo20.png'
 import logo21 from '../Images/logo21.png'
 
+import me6 from '../Images/photos_me/me6.png'
+
 // import resume_test from '../Images/resume_test.pdf'
 import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
@@ -45,9 +47,26 @@ aspect-ratio: 1/1;
 }
 `
 
+const ProfileImage = styled.img`
+border-radius: 100px;
+width: 30em;
+
+@media screen and (max-width: 640px) {
+    width: 50%;
+    border-radius: 20%;
+    
+    
+}
+
+`
+
 const TextContainer = styled.div`
+width: 100%;
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
+gap: 15px;
 `
 
 const TextItem = styled.p`
@@ -113,7 +132,7 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-                <TextContainer><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
+                <TextContainer><ProfileImage src={me6} alt="Photo of Me :D"/><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
                 <br></br>
                     <HyperLinksStyle>
                         <ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul>

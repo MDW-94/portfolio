@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DisplayConatiner = styled.div`
 overflow: hidden;
-height: 55vh;
+height: 50vh;
 width: 80vw;
 display: grid;
 grid-template-columns: 1.5fr 3fr;
