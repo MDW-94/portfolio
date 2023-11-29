@@ -6,32 +6,44 @@ import styled from "styled-components";
 const ProjectsPageContainer = styled.div`
 display: flex;
 flex-direction: column;
-height: 76vh;
+height: 55vh;
 width: 100vw;
 padding: 1em;
 align-items: center;
+justify-content: center;
 margin-top: auto;
 
 `
 
 const DisplayContainerMain = styled.div`
 display: grid;
-height: 80vh;
+height: 65vh;
 width: 80vw;
 align-items: center;
 `
 const SearchBarElement = styled.div`
 display: flex;
+position: absolute;
+top: 20%;
 flex-direction: column;
 border-radius: 30em;
-align-items: center;
+/* align-items: top; */
+/* justify-content: start; */
 border: 2.75px solid antiquewhite;
 width: 50vw;
-margin-left: 5em;
-/* padding: 0.5em; */
 
 @media screen and (max-width: 600px){
     margin-left: 0%;
+}
+@media screen and (max-width: 895px){
+    top: 30%;
+}
+@media screen and (max-width: 460px){
+    top: 27.5%;
+}
+
+@media screen and (max-width: 400px){
+    top: 30.5%;
 }
 `
 
@@ -43,8 +55,6 @@ const ProjectsList = ({projects, loadQuery}) => {
 
     return ( 
         <ProjectsPageContainer>
-            <br/>
-            <br/>
             <SearchBarElement>
                 <SearchBar loadQuery={loadQuery}/>
                 </SearchBarElement>
