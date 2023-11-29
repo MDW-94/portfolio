@@ -41,6 +41,9 @@ padding: 1.75em;
 width: 80%;
 border-radius: 10%;
 background-color: rgba(4, 59, 92, 0.60);
+max-height: 40%;
+
+overflow-y: scroll;
 
 font-weight: 500;
 

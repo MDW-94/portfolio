@@ -6,7 +6,7 @@ import styled from "styled-components";
 const ProjectsPageContainer = styled.div`
 display: flex;
 flex-direction: column;
-height: 55vh;
+height: 90vh;
 width: 100vw;
 padding: 1em;
 align-items: center;
@@ -36,14 +36,14 @@ width: 50vw;
     margin-left: 0%;
 }
 @media screen and (max-width: 895px){
-    top: 30%;
+    top: 35%;
 }
 @media screen and (max-width: 460px){
-    top: 27.5%;
+    top: 30.5%;
 }
 
 @media screen and (max-width: 400px){
-    top: 30.5%;
+    top: 35.5%;
 }
 `
 
