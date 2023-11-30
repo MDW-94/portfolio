@@ -10,8 +10,7 @@ font-weight: 800;
 text-align: center;
 
 background: rgba(4, 59, 92, 0.40);
-border: rgba(255, 255, 255, 0);
-color: white;
+border: 2.75px solid antiquewhite;
 
 @media screen and (max-width: 750px){
     width: 50vw;

@@ -29,7 +29,7 @@ flex-direction: column;
 border-radius: 30em;
 /* align-items: top; */
 /* justify-content: start; */
-border: 2.75px solid antiquewhite;
+
 width: 50vw;
 
 @media screen and (max-width: 600px){
