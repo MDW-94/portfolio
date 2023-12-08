@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProjectItem from './ProjectItem'
 import SearchBar from "./SearchBar";
 import styled from "styled-components";
@@ -14,7 +14,6 @@ justify-content: center;
 margin-top: auto;
 
 `
-
 const DisplayContainerMain = styled.div`
 display: grid;
 height: 65vh;
