@@ -43,7 +43,26 @@ function App() {
   const[loading, setLoading] = useState(true);
   
   useEffect(() => {
+    // const handleWheel = (event) => {
+    //   if(event.deltaY !== 0 || event.deltaX !== 0){
+    //     event.preventDefault();
+    //   }
+    // }
+    // document.addEventListener('wheel', handleWheel, {passive:false});
+
+    // const handleTouchMove = (event) => {
+    //   event.preventDefault();
+    // }
+    // document.addEventListener('touchmove', handleTouchMove, {passive:false});
+
     setTimeout(() => setLoading(false), 4000)
+
+    // return () => {
+    //   document.removeEventListener('wheel', handleWheel);
+    //   document.removeEventListener('touchmove', handleTouchMove);
+    // }
+
+
   }, []);
 
   if (loading) {
@@ -71,3 +90,8 @@ function App() {
 export default App;
 
 // package.json ,
+
+// https://chat.openai.com/share/84c80036-bb79-4911-9fa4-35efdc8682df
+// look over how to add scroll feature to only certain parts of the app
+// at the moment the functionality at the top removes all scrolling and
+// touch events for the entire app
