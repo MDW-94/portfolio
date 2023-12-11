@@ -27,6 +27,7 @@ const PortfolioContainer = ({codeProjects}) => {
     useEffect(() => {
         loadProjects(codeProjects)
     }, [])
+    
 
     const loadProjects = (data) => {
         setCodingProjects(data)

@@ -8,8 +8,6 @@ import logo18 from '../Images/logo18.png'
 import logo20 from '../Images/logo20.png'
 import logo21 from '../Images/logo21.png'
 
-import me1 from '../Images/photos_me/me1.png'
-
 // import resume_test from '../Images/resume_test.pdf'
 import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
@@ -45,18 +43,6 @@ aspect-ratio: 1/1;
 &:hover {
     opacity: 0.3;
 }
-`
-
-const ProfileImage = styled.img`
-border-radius: 10%;
-width: 35%;
-margin-top: 25%;
-
-@media screen and (max-width: 640px) {
-    width: 45%;
-    border-radius: 15%;
-}
-
 `
 
 const TextContainer = styled.div`
@@ -136,7 +122,7 @@ const HyperLinks = () => {
         <div>
             <br></br>
             <br></br>
-                <TextContainer><ProfileImage src={me1} alt="Photo of Me."/><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
+                <TextContainer><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
                 <br></br>
                     <HyperLinksStyle>
                         <ul><a href="https://github.com/MDW-94"><ImageItem src={logo21} alt="a link to my github"/></a></ul>

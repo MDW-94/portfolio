@@ -4,6 +4,19 @@ import Carousel from "./Carousel";
 
 import styled from "styled-components";
 
+import me1 from '../Images/photos_me/me1.png'
+
+const ProfileImage = styled.img`
+border-radius: 10%;
+width: 35%;
+margin-top: 25%;
+
+@media screen and (max-width: 640px) {
+    width: 45%;
+    border-radius: 15%;
+}
+
+`
 
 const AboutStyle = styled.div`
 display: flex;
@@ -26,7 +39,3 @@ const About = () => {
 }
  
 export default About;
-
-// https://github.com/splinetool/react-spline
-
-// https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene

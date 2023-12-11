@@ -62,14 +62,6 @@ const ProjectsItem = ({project}) => {
         return language + ", "
     })
 
-    // const handleClick = (event) => {
-    //     event.preventDefault()
-    //     // console.log(project.name)
-    //     console.log("HI!!!!!!!!!!!!!")
-    //     // console.log(project.languages)
-    // }
-    
-
     return (
         <>
         <DisplayConatiner>
