@@ -40,6 +40,7 @@ const BackgroundImageStyle = styled.div`
 `
 
 const BackgroundImageComponent = () => {
+
     const backgroundStyle ={
         backgroundImage: `url(${background1})`,
         backgroundRepeat: 'no-repeat',

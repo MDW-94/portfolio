@@ -40,34 +40,24 @@ const LoadingBackground = styled.div`
 
 function App() {
 
-  // const[loading, setLoading] = useState(true);
-  
-  // useEffect(() => {
-    // const handleWheel = (event) => {
-    //   if(event.deltaY !== 0 || event.deltaX !== 0){
-    //     event.preventDefault();
-    //   }
-    // }
-    // document.addEventListener('wheel', handleWheel, {passive:false});
+    // useEffect(() => {
+  //   const handleWheel = (event) => {
+  //     if(event.deltaY !== 0 || event.deltaX !== 0){
+  //       event.preventDefault();
+  //     }
+  //   }
+  //   document.addEventListener('wheel', handleWheel, {passive:false});
 
-    // const handleTouchMove = (event) => {
-    //   event.preventDefault();
-    // }
-    // document.addEventListener('touchmove', handleTouchMove, {passive:false});
+  //   const handleTouchMove = (event) => {
+  //     event.preventDefault();
+  //   }
+  //   document.addEventListener('touchmove', handleTouchMove, {passive:false});
 
-    // setTimeout(() => setLoading(false), 4000)
-
-    // return () => {
-    //   document.removeEventListener('wheel', handleWheel);
-    //   document.removeEventListener('touchmove', handleTouchMove);
-    // }
-
-
+  //   return () => {
+  //     document.removeEventListener('wheel', handleWheel);
+  //     document.removeEventListener('touchmove', handleTouchMove);
+  //   }
   // }, []);
-
-  // if (loading) {
-  //   return <Loading/>;
-  // }
 
   const codeProjectsImported = codeProjects
 

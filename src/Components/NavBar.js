@@ -1,13 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import logo5 from "../logo5.png"
 
 // media screen and max-width properties need to be added - all navbar links and logo must be visible through different styling of the app
 
 const NavContainer = styled.div`
-/* background: rgba(245, 245, 245, 0.45); // White smoke colour, pastel grey */
 background-color: rgba(4, 59, 92, 0.60);
 display: flex;
 flex-wrap: wrap;
@@ -61,6 +60,7 @@ font-family: 'Courier New', Courier, monospace;
 font-weight: 1100;
 align-items: center;
 @media screen and (max-width: 895px){
+    /* align-self: center; */
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
