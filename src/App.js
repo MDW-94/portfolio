@@ -40,9 +40,9 @@ const LoadingBackground = styled.div`
 
 function App() {
 
-  const[loading, setLoading] = useState(true);
+  // const[loading, setLoading] = useState(true);
   
-  useEffect(() => {
+  // useEffect(() => {
     // const handleWheel = (event) => {
     //   if(event.deltaY !== 0 || event.deltaX !== 0){
     //     event.preventDefault();
@@ -55,7 +55,7 @@ function App() {
     // }
     // document.addEventListener('touchmove', handleTouchMove, {passive:false});
 
-    setTimeout(() => setLoading(false), 4000)
+    // setTimeout(() => setLoading(false), 4000)
 
     // return () => {
     //   document.removeEventListener('wheel', handleWheel);
@@ -63,11 +63,11 @@ function App() {
     // }
 
 
-  }, []);
+  // }, []);
 
-  if (loading) {
-    return <Loading/>;
-  }
+  // if (loading) {
+  //   return <Loading/>;
+  // }
 
   const codeProjectsImported = codeProjects
 
