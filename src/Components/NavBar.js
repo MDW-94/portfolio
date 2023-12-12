@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import SearchBar from "./SearchBar";
 
 import logo5 from "../logo5.png"
 
@@ -162,6 +163,17 @@ const Item3 = styled.div`
 }`
 
 const NavBar = () => {
+    // const [onProjectsList, setOnProjectsList] = useState(false);
+
+    // const handleClick = (event) => {
+    //     event.preventDefault();
+    //     if(event !== ...){setOnProjectsList(false)}
+
+    //     else{setOnProjectsList(true)}
+    //     counter for each React route in the nav bar?
+    // }
+
+
     return (
         <NavContainer>
         <p><StyledLink to="/"><StyledImage src={logo5}/></StyledLink></p> 
@@ -170,7 +182,7 @@ const NavBar = () => {
                 <ul><StyledLink to="/Projects"><Item2><h4>Projects</h4></Item2></StyledLink></ul>
                 <ul><StyledLink to="/Contact"><Item3><h4>Contact</h4></Item3></StyledLink></ul><br></br>
             </RightItems>
-            {/* {"/Projects"? <div>Search bar</div> : ""} */}
+            {/* {onProjectsList? <div>Search bar</div> : ""} */}
         </NavContainer>
      );
 }
