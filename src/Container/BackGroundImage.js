@@ -26,7 +26,9 @@ const BackgroundImageStyle = styled.div`
     /* background-size: 200%; */
 }
 @media screen and (max-width: 775px){
-    background-size: 200vh;
+    background-size: 210vh;
+    width: 100vw;
+    background-position-x: center;
 }
 
 @media screen and (max-height: 380px){
@@ -35,8 +37,6 @@ const BackgroundImageStyle = styled.div`
 @media screen and (max-height: 250px){
     background-size: 250vw;
 }
-
-
 `
 
 const BackgroundImageComponent = () => {
@@ -44,11 +44,15 @@ const BackgroundImageComponent = () => {
     const backgroundStyle ={
         backgroundImage: `url(${background1})`,
         backgroundRepeat: 'no-repeat',
+        backgroundsize: 'cover',
         height: '100vh',
+        overflow: 'hidden'
     };
     return (
         <>
-    <BackgroundImageStyle style={backgroundStyle}><TextContainer><h4>© 2023 M. Wasylko</h4></TextContainer></BackgroundImageStyle>
+    <BackgroundImageStyle style={backgroundStyle}>
+        <TextContainer><h4>© 2023 M. Wasylko</h4></TextContainer>
+    </BackgroundImageStyle>
     </>
     )
 };

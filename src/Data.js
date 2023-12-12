@@ -1,4 +1,4 @@
-import dramm_1 from '../src/Images/project_images/dramm_1.png'
+import dramm_4 from '../src/Images/project_images/dramm_4.png'
 import navigate_1 from '../src/Images/project_images/navigate_1.png'
 import pcc_1 from '../src/Images/project_images/pcc_1.png'
 // Can't be imported due to hierarchy!
@@ -12,7 +12,7 @@ const pcc_imgs = []
 const codeProjects = [
     {name: "DRAMM Audio-Visual Synth",
     desc: "An interactive, audio-visual synthesizer using XY touch or mouse event data to affect dynamic parameters in Tone.js (audio) and P5.js (visuals)",
-    image: dramm_1,
+    image: dramm_4,
     languages: ["React","Javascript", "Java", "Tone.js", "P5.js", "Spring.io", "MongoDB", "Insomnia"]}, 
 
     {name: "Navigate - Social Services Management App",
