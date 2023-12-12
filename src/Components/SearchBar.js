@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { useProjects } from "../hooks/useProjects"
 
 const SearchBarStyle = styled.input`
 font-family: 'Courier New', Courier, monospace;
@@ -31,7 +32,9 @@ border: 2.75px solid antiquewhite;
 }
 `
 
-const SearchBar = ({loadQuery}) => {
+const SearchBar = () => {
+
+    const {loadQuery} = useProjects();
 
     const handleChange = (e) =>{
         e.preventDefault()

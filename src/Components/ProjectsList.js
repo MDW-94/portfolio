@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import ProjectItem from './ProjectItem'
 import SearchBar from "./SearchBar";
 import styled from "styled-components";
+import { useProjects } from "../hooks/useProjects";
 
 const ProjectsPageContainer = styled.div`
 display: flex;
@@ -46,17 +47,21 @@ width: 50vw;
 }
 `
 
-const ProjectsList = ({projects, loadQuery}) => {
+const ProjectsList = () => {
+
+    const {projects} = useProjects();
 
     const projectsList = projects.map((project, index) => {
         return <ProjectItem key={index} project={project}/>
     })
 
+    console.log(projects)
+
     return ( 
         <ProjectsPageContainer>
-            <SearchBarElement>
-                <SearchBar loadQuery={loadQuery}/>
-                </SearchBarElement>
+            {/* <SearchBarElement> */}
+                {/* <SearchBar loadQuery={loadQuery}/>
+                </SearchBarElement> */}
                 <DisplayContainerMain>
                     {projectsList}
                 </DisplayContainerMain>

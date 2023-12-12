@@ -11,6 +11,7 @@ import Loading from './Loading';
 import BackgroundImageComponent from './Container/BackGroundImage';
 import './App.css';
 import styled from 'styled-components';
+import { ProjectsProvider } from './hooks/useProjects';
 
 const MainContainStyleUnit = styled.div`
 position: absolute;
@@ -62,18 +63,19 @@ function App() {
   const codeProjectsImported = codeProjects
 
   return (
-    <div className='App'>
-      <BackgroundImageComponent/>
-      <Router>
-        <MainContainStyleUnit>
-          <NavBar/>
-          {/* Add search bar here? */}
-          <ScrollFunction>
-            <PortfolioContainer codeProjects={codeProjectsImported}/>
-          </ScrollFunction>
-        </MainContainStyleUnit>
-      </Router>
-    </div>
+    <ProjectsProvider>
+       <div className='App'>
+        <BackgroundImageComponent/>
+        <Router>
+          <MainContainStyleUnit>
+            <NavBar/>
+            <ScrollFunction>
+              <PortfolioContainer codeProjects={codeProjectsImported}/>
+            </ScrollFunction>
+          </MainContainStyleUnit>
+        </Router>
+      </div>
+    </ProjectsProvider>
   );
 }
 
