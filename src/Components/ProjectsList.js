@@ -55,7 +55,7 @@ const ProjectsList = () => {
         return <ProjectItem key={index} project={project}/>
     })
 
-    console.log(projects)
+    // console.log(projects)
 
     return ( 
         <ProjectsPageContainer>
