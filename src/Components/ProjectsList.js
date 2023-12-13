@@ -7,7 +7,7 @@ import { useProjects } from "../hooks/useProjects";
 const ProjectsPageContainer = styled.div`
 display: flex;
 flex-direction: column;
-height: 90vh;
+height: 80vh;
 width: 100vw;
 padding: 1em;
 align-items: center;
@@ -55,7 +55,7 @@ const ProjectsList = () => {
         return <ProjectItem key={index} project={project}/>
     })
 
-    console.log(projects)
+    // console.log(projects)
 
     return ( 
         <ProjectsPageContainer>
@@ -64,6 +64,7 @@ const ProjectsList = () => {
                 </SearchBarElement> */}
                 <DisplayContainerMain>
                     {projectsList}
+                    <br></br>
                 </DisplayContainerMain>
         </ProjectsPageContainer>
      );

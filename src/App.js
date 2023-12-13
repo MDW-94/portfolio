@@ -63,27 +63,22 @@ function App() {
   const codeProjectsImported = codeProjects
 
   return (
-    <ProjectsProvider>
+  
        <div className='App'>
         <BackgroundImageComponent/>
-        <Router>
-          <MainContainStyleUnit>
-            <NavBar/>
-            <ScrollFunction>
-              <PortfolioContainer codeProjects={codeProjectsImported}/>
-            </ScrollFunction>
-          </MainContainStyleUnit>
-        </Router>
+        <ProjectsProvider>
+          <Router>
+            <MainContainStyleUnit>
+              <NavBar/>
+              <ScrollFunction>
+                <PortfolioContainer codeProjects={codeProjectsImported}/>
+              </ScrollFunction>
+            </MainContainStyleUnit>
+          </Router>
+        </ProjectsProvider>
       </div>
-    </ProjectsProvider>
+  
   );
 }
 
 export default App;
-
-// package.json ,
-
-// https://chat.openai.com/share/84c80036-bb79-4911-9fa4-35efdc8682df
-// look over how to add scroll feature to only certain parts of the app
-// at the moment the functionality at the top removes all scrolling and
-// touch events for the entire app

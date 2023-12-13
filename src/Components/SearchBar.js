@@ -3,28 +3,28 @@ import { useProjects } from "../hooks/useProjects"
 
 const SearchBarStyle = styled.input`
 font-family: 'Courier New', Courier, monospace;
-border-radius: 40em;
+border-radius: 0.5em;
 height: 1.5em;
-width: 49.7vw;
-font-size: 1.2em;
+width: 99.5vw;
+font-size: 1.3em;
 font-weight: 800;
 text-align: center;
+color: white;
 
-background: rgba(4, 59, 92, 0.40);
-border: 2.75px solid antiquewhite;
+background: rgba(4, 59, 92, 0.10);
+border: 2px solid antiquewhite;
 
 @media screen and (max-width: 750px){
-    width: 50vw;
+    border-radius: 0.2em;
     font-size: 1em;
 }
 
 @media screen and (max-width: 650px){
-    width: 50vw;
     font-size: 1em;
 }
 
 &::placeholder{
-    color: white;
+    color: whitesmoke;
     font-weight: 500;
 }
 &:hover{
@@ -43,7 +43,7 @@ const SearchBar = () => {
 
     return ( 
         <>
-        <SearchBarStyle type="text" onChange={handleChange} placeholder="Search by programming language"/>
+        <SearchBarStyle type="text" onChange={handleChange} placeholder="- Search by Tech Stack -"/>
         </>
      );
 }

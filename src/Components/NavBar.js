@@ -157,10 +157,9 @@ const Item3 = styled.div`
   }
 `;
 
+
 const NavBar = () => {
   const location = useLocation();
-
-  console.log(location);
 
   return (
     <NavContainer>
@@ -193,14 +192,9 @@ const NavBar = () => {
         </ul>
         <br></br>
       </RightItems>
-      {/* {onProjectsList? <div>Search bar</div> : ""} */}
       {location.pathname === "/Projects" ? <SearchBar/> : null}
     </NavContainer>
   );
 };
 
 export default NavBar;
-
-// ternary needs to be able to render the Searchbar component
-// ternary is activated by user clicking Projects React route
-// can you put a react route inside a ternary?

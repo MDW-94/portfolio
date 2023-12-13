@@ -54,7 +54,7 @@ align-items: center;
 gap: 5%;
 
 @media screen and (max-width: 400px) {
-    margin-top: 50%;
+    margin-top: 40%;
     
 }
 `
@@ -69,7 +69,7 @@ margin-top: 1em;
 font-weight: 1000em;
 margin-left: 20vw;
 margin-right: 20vw;
-margin-bottom: 5em;
+margin-bottom: 4em;
 
 
 background-color: rgb(4, 59, 92, 0.7);
@@ -121,7 +121,6 @@ const HyperLinks = () => {
     return ( 
         <div>
             <br></br>
-            <br></br>
                 <TextContainer><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
                 <br></br>
                     <HyperLinksStyle>
@@ -135,3 +134,5 @@ const HyperLinks = () => {
 }
  
 export default HyperLinks;
+
+// include an email me form above or between the links to the socials?
