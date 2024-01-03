@@ -58,5 +58,3 @@ const BackgroundImageComponent = () => {
 };
  
 export default BackgroundImageComponent;
-
-// min-height: 100vh; means that the minimum height of an element should be 100% of the viewport height. It is a CSS media query used to set the minimum height of an element to be equal to the height of the viewport.
