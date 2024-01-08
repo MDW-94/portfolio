@@ -73,6 +73,7 @@ margin-top: 1em;
 font-weight: 1000em;
 margin-left: 20vw;
 margin-right: 20vw;
+margin-bottom: 2.5em;
 
 
 background-color: rgb(4, 59, 92, 0.7);
