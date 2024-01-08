@@ -41,25 +41,6 @@ const LoadingBackground = styled.div`
 
 function App() {
 
-    // useEffect(() => {
-  //   const handleWheel = (event) => {
-  //     if(event.deltaY !== 0 || event.deltaX !== 0){
-  //       event.preventDefault();
-  //     }
-  //   }
-  //   document.addEventListener('wheel', handleWheel, {passive:false});
-
-  //   const handleTouchMove = (event) => {
-  //     event.preventDefault();
-  //   }
-  //   document.addEventListener('touchmove', handleTouchMove, {passive:false});
-
-  //   return () => {
-  //     document.removeEventListener('wheel', handleWheel);
-  //     document.removeEventListener('touchmove', handleTouchMove);
-  //   }
-  // }, []);
-
   const codeProjectsImported = codeProjects
 
   return (
