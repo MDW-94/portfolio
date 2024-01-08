@@ -11,6 +11,12 @@ import logo21 from '../Images/logo21.png'
 // import resume_test from '../Images/resume_test.pdf'
 import matthew_wasylko_resume from '../Images/matthew_wasylko_resume.pdf'
 
+const PageStyle = styled.div`
+position: absolute;
+align-items: center;
+justify-content: center;
+`
+
 const HyperLinksStyle = styled.li`
 display: flex;
 width: 100vw;
@@ -24,15 +30,13 @@ margin-bottom: 5%;
 @media screen and (max-width: 365px){
     width: 100%;
     overflow-x: scroll;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 @media screen and (max-width: 460px){
     
 }
 @media screen and (max-width: 895px) {
-    margin-bottom: 3%;
     margin-top: -4%;
-    padding-bottom: 2em;
 }
 `
 
@@ -54,7 +58,7 @@ align-items: center;
 gap: 5%;
 
 @media screen and (max-width: 400px) {
-    margin-top: 40%;
+    margin-top: 12.5%;
     
 }
 `
@@ -69,7 +73,6 @@ margin-top: 1em;
 font-weight: 1000em;
 margin-left: 20vw;
 margin-right: 20vw;
-margin-bottom: 4em;
 
 
 background-color: rgb(4, 59, 92, 0.7);
@@ -119,7 +122,7 @@ alt: "Searching for a new developer role";
 
 const HyperLinks = () => {
     return ( 
-        <div>
+        <PageStyle>
             <br></br>
                 <TextContainer><TextItem>- Looking For A New Developer Role -</TextItem></TextContainer>
                 <br></br>
@@ -129,7 +132,7 @@ const HyperLinks = () => {
                         <ul><a href={matthew_wasylko_resume} download><ImageItem src={logo17} alt="download my resume"/></a></ul>
                         <ul><a href="mailto:matthew.wasylko@gmail.com"><ImageItem src={logo18} alt="a link to my email address"/></a></ul>
                     </HyperLinksStyle>
-        </div>
+        </PageStyle>
      );
 }
  
