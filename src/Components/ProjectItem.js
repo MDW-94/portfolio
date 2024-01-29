@@ -2,14 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 const DisplayConatiner = styled.div`
+background-color: rgba(4, 59, 92, 0.60);
 overflow: hidden;
-height: 50vh;
-width: 80vw;
-display: grid;
-grid-template-columns: 1.5fr 3fr;
-grid-gap: 3em;
-padding: 1.5em;
+border-radius: 12px;
+
+display: flex;
+flex-direction: column;
+padding: 32px;
+margin-top: 32px;
+margin-bottom: 32px;
+width: 50%;
+justify-content: space-between;
 align-items: center;
+
 overflow-x: scroll;
 
 @media screen and (max-width: 600px){
@@ -18,14 +23,24 @@ overflow-x: scroll;
 }
 
 `
+
+const ProjectCard = styled.div`
+display: flex;
+justify-content: space-between;
+max-height: 128px;
+max-width: 80vw;
+gap: 32px;
+overflow-x: scroll;
+`
+
 const StyledImage2 = styled.img`
-width: 20em;
-background-image: contain;
-aspect-ratio: 100%;
-border-radius: 7.5%;
+border-radius: 8px;
+max-width: 256px;
+max-height: 128px;
+/* padding-left: 64px; */
 
 @media screen and (max-width: 730px){
-    width: 15em;
+    
 }
 
 &:hover {
@@ -37,18 +52,11 @@ border-radius: 7.5%;
 }
 `
 const TextContainerStyle = styled.div`
-padding: 1.75em;
-width: 80%;
-border-radius: 10%;
-background-color: rgba(4, 59, 92, 0.60);
-max-height: 40%;
-
+font-size: 16px;
+margin-right: 16px;
 overflow-y: scroll;
 
-font-weight: 500;
-
 @media screen and (max-width: 600px){
-    margin-right: 5em;
     
 }
 `
@@ -56,7 +64,7 @@ font-weight: 500;
 const ProjectsItem = ({project}) => {
 
     const programLanguages = project.languages.map((language, index) =>{
-        if(index == (project.languages.length-1)){
+        if(index === (project.languages.length-1)){
             return language
         }
         return language + ", "
@@ -65,16 +73,17 @@ const ProjectsItem = ({project}) => {
     return (
         <>
         <DisplayConatiner>
-            <div>
+            <ProjectCard>
                 <StyledImage2 src={project.image}/>
-            </div>
-            <TextContainerStyle>
-                <h3>Name: {project.name}</h3>
-                <p>{project.desc}</p>
-                <br/>
-                <p>Languages: {programLanguages}</p>
-                {/* <button onClick={handleClick}></button> */}
-            </TextContainerStyle>
+    
+                <TextContainerStyle>
+                    <h4>Name: {project.name}</h4>
+                    <p>{project.desc}</p>
+                    <br/>
+                    <p>Languages: {programLanguages}</p>
+                    {/* <button onClick={handleClick}></button> */}
+                </TextContainerStyle>
+            </ProjectCard>
         </DisplayConatiner>
         </>
     );
